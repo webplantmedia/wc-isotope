@@ -11,7 +11,7 @@ License URI: http://isotope.metafizzy.co/docs/license.html
 */
 
 if( !function_exists ('wc_isotope_scripts') ) :
-	function wc_shortcodes_scripts() {
+	function wc_isotope_scripts() {
 		wp_register_script( 'wordpresscanvas-isotope', plugin_dir_url( __FILE__ ) . 'js/jquery.isotope.min.js', array ( 'jquery' ), '1.5.25', false );
 	}
 	add_action('wp_enqueue_scripts', 'wc_isotope_scripts');
